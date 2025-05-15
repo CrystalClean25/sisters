@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Power Clean Sisters</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #144d6f;
+      color: #fff;
+      padding: 20px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    section {
+      padding: 40px 20px;
+    }
+    #hero {
+      background: #0b3c59;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 400px;
+    }
+    footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Power Clean Sisters</h1>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h2>Professional Cleaning Services with a Personal Touch</h2>
+    <p>Power Clean Sisters is your trusted partner for spotless homes and businesses.</p>
+  </section>
+
+  <section id="about">
+    <h3>About Us</h3>
+    <p>
+      We are a dedicated team of professional cleaners committed to delivering exceptional service.
+      With years of experience, eco-friendly products, and a personal approach, we ensure every
+      space shines with care and precision.
+    </p>
+  </section>
+
+  <section id="services">
+    <h3>Our Services</h3>
+    <ul>
+      <li>Residential Cleaning</li>
+      <li>Commercial/Office Cleaning</li>
+      <li>Move-In / Move-Out Cleaning</li>
+      <li>Deep Cleaning</li>
+      <li>Post-Construction Cleaning</li>
+    </ul>
+  </section>
+
+  <section id="reviews">
+    <h3>Customer Reviews</h3>
+    <div id="review-list">
+      <p>"Best cleaning team we've ever hired! - Amanda R."</p>
+      <p>"They went above and beyond. Highly recommend. - James P."</p>
+    </div>
+    <form id="submit-review">
+      <h4>Leave a Review</h4>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <textarea name="review" placeholder="Your Review" required></textarea>
+      <button type="submit">Submit Review</button>
+    </form>
+  </section>
+
+  <section id="contact">
+    <h3>Get in Touch</h3>
+    <p>Leave your name and number, and we’ll reach out to you shortly.</p>
+    <form id="lead-form">
+      <input type="text" name="customerName" placeholder="Full Name" required />
+      <input type="tel" name="phoneNumber" placeholder="Phone Number" required />
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Power Clean Sisters. All rights reserved.</p>
+    <ul>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </footer>
+
+  <script>
+    document.getElementById('submit-review').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your review!');
+    });
+    document.getElementById('lead-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you! We will contact you shortly.');
+    });
+  </script>
+</body>
+</html>
